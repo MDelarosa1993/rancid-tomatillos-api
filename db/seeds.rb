@@ -1,9 +1,171 @@
-# This file should ensure the existence of records required to run the application in every environment (production,
-# development, test). The code here should be idempotent so that it can be executed at any point in every environment.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Example:
-#
-#   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-#     MovieGenre.find_or_create_by!(name: genre_name)
-#   end
+Movie.create!([
+  {
+    id: 155,
+    title: "The Dark Knight",
+    overview: "Batman raises the stakes in his war on crime...",
+    poster_path: "https://image.tmdb.org/t/p/original//qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//nMKdUUepR0i5zn0y1T4CsSB5chy.jpg",
+    release_date: "2008-07-16",
+    popularity: 145.213,
+    original_language: "en",
+    genre_ids: ["Drama", "Action", "Crime", "Thriller"],
+    vote_count: 32544
+  },
+  {
+    id: 496243,
+    title: "Parasite",
+    overview: "All unemployed, Ki-taek's family takes peculiar interest...",
+    poster_path: "https://image.tmdb.org/t/p/original//krhU4toMvIVgZXZIyrlpuW1DwP9.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//x6skktR5OS99lAX4JhmjCQYq490.jpg",
+    release_date: "2019-05-30",
+    popularity: 102.541,
+    original_language: "ko",
+    genre_ids: ["Comedy", "Drama", "Thriller"],
+    vote_count: 18018
+  },
+  {
+    id: 497,
+    title: "The Green Mile",
+    overview: "A supernatural tale set on death row in a Southern prison...",
+    poster_path: "https://image.tmdb.org/t/p/original//8VG8fDNiy50H4FedGwdSVUPoaJe.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//z1uRO9B7Gqp9ZELapLdX80Ivtwv.jpg",
+    release_date: "1999-12-10",
+    popularity: 78.561,
+    original_language: "en",
+    genre_ids: ["Crime", "Drama", "Fantasy"],
+    vote_count: 17210
+  },
+  {
+    id: 680,
+    title: "Pulp Fiction",
+    overview: "A burger-loving hit man, his philosophical partner...",
+    poster_path: "https://image.tmdb.org/t/p/original//vQWk5YBFWF4bZaofAbv0tShwBvQ.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+    release_date: "1994-09-10",
+    popularity: 110.675,
+    original_language: "en",
+    genre_ids: ["Crime", "Drama"],
+    vote_count: 27642
+  },
+  {
+    id: 278,
+    title: "The Shawshank Redemption",
+    overview: "Framed in the 1940s for the double murder of his wife...",
+    poster_path: "https://image.tmdb.org/t/p/original//9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//zfbjgQE1uSd9wiPTX4VzsLi0rGG.jpg",
+    release_date: "1994-09-22",
+    popularity: 112.825,
+    original_language: "en",
+    genre_ids: ["Drama", "Crime"],
+    vote_count: 24000
+  },
+  {
+    id: 238,
+    title: "The Godfather",
+    overview: "Spanning the years 1945 to 1955, a chronicle...",
+    poster_path: "https://image.tmdb.org/t/p/original//3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//kGzFbGhp99zva6oZODW5atUtnqi.jpg",
+    release_date: "1972-03-14",
+    popularity: 90.345,
+    original_language: "en",
+    genre_ids: ["Crime", "Drama"],
+    vote_count: 19050
+  },
+  {
+    id: 424,
+    title: "Schindler's List",
+    overview: "The true story of how businessman Oskar Schindler...",
+    poster_path: "https://image.tmdb.org/t/p/original//sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//zb6fM1CX41D9rF9hdgclu0peUmy.jpg",
+    release_date: "1993-12-15",
+    popularity: 89.457,
+    original_language: "en",
+    genre_ids: ["Drama", "History", "War"],
+    vote_count: 12504
+  },
+  {
+    id: 129,
+    title: "Spirited Away",
+    overview: "A young girl, Chihiro, becomes trapped in a strange new world...",
+    poster_path: "https://image.tmdb.org/t/p/original//39wmItIWsg5sZMyRUHLkWBcuVCM.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//6oaL4DP75yABrd5EbC4H2zq5ghc.jpg",
+    release_date: "2001-07-20",
+    popularity: 74.365,
+    original_language: "ja",
+    genre_ids: ["Fantasy", "Adventure", "Animation", "Family"],
+    vote_count: 11424
+  },
+  {
+    id: 122,
+    title: "The Lord of the Rings: The Return of the King",
+    overview: "Aragorn is revealed as the heir to the ancient kings...",
+    poster_path: "https://image.tmdb.org/t/p/original//rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//5JrZAtyk3LwiiAWLW0kwz41XZJC.jpg",
+    release_date: "2003-12-01",
+    popularity: 110.452,
+    original_language: "en",
+    genre_ids: ["Action", "Adventure", "Drama", "Fantasy"],
+    vote_count: 15032
+  },
+  {
+    id: 120,
+    title: "The Lord of the Rings: The Fellowship of the Ring",
+    overview: "A meek hobbit from the Shire and eight companions...",
+    poster_path: "https://image.tmdb.org/t/p/original//6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//z51Wzj94hvAIsWfknifKTqKJRwp.jpg",
+    release_date: "2001-12-18",
+    popularity: 88.354,
+    original_language: "en",
+    genre_ids: ["Adventure", "Fantasy"],
+    vote_count: 13734
+  },
+  {
+    id: 27205,
+    title: "Inception",
+    overview: "Cobb, a skilled thief who commits corporate espionage...",
+    poster_path: "https://image.tmdb.org/t/p/original//oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
+    release_date: "2010-07-15",
+    popularity: 134.456,
+    original_language: "en",
+    genre_ids: ["Action", "Science Fiction", "Adventure"],
+    vote_count: 29043
+  },
+  {
+    id: 13,
+    title: "Forrest Gump",
+    overview: "A man with a low IQ has accomplished great things in his life...",
+    poster_path: "https://image.tmdb.org/t/p/original//arw2vcBveWOVZr6pxd9XTd1TdQa.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//mzfx54nfDPTUXZOG48u4LaEheDy.jpg",
+    release_date: "1994-07-06",
+    popularity: 100.234,
+    original_language: "en",
+    genre_ids: ["Drama", "Comedy", "Romance"],
+    vote_count: 22034
+  },
+  {
+    id: 372058,
+    title: "Your Name",
+    overview: "Two teenagers share a profound, magical connection...",
+    poster_path: "https://image.tmdb.org/t/p/original//8x9iKH8kWA0zdkgNdpAew7OstYe.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//vfJFJPepRKapMd5G2ro7klIRysq.jpg",
+    release_date: "2016-08-26",
+    popularity: 80.345,
+    original_language: "ja",
+    genre_ids: ["Animation", "Drama", "Fantasy"],
+    vote_count: 15784
+  },
+  {
+    id: 424785,
+    title: "Transformers: The Last Knight",
+    overview: "Humans and Transformers are at war...",
+    poster_path: "https://image.tmdb.org/t/p/original///s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg",
+    backdrop_path: "https://image.tmdb.org/t/p/original//1n00NlOGRFZVs8coBxyZLm5l4EC.jpg",
+    release_date: "2017-06-21",
+    popularity: 110.482,
+    original_language: "en",
+    genre_ids: ["Science Fiction", "Action", "Adventure"],
+    vote_count: 13245
+  }
+])
+
